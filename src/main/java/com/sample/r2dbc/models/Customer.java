@@ -1,13 +1,15 @@
 package com.sample.r2dbc.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
 @Setter
-@Table("customer")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
     @Id

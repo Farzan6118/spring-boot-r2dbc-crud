@@ -14,11 +14,11 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("api/v1/customer")
-public class CustomerRestController {
+public class CustomerController {
     private final CustomerRepository customerRepository;
     private final ModelMapper modelMapper;
 
-    public CustomerRestController(CustomerRepository customerRepository, ModelMapper modelMapper) {
+    public CustomerController(CustomerRepository customerRepository, ModelMapper modelMapper) {
         this.customerRepository = customerRepository;
         this.modelMapper = modelMapper;
     }
